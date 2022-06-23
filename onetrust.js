@@ -5,4 +5,7 @@ function dynamicallyLoadScript(url) {
   document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
 }
 
+var myHeaders = new Headers(); // Currently empty
+myHeaders.set('Content-Type', 'text/html');
+
 dynamicallyLoadScript('')
